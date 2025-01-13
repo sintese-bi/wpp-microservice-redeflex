@@ -1,0 +1,29 @@
+-- AlterTable
+ALTER TABLE "gas_station_setvariables" ADD COLUMN     "gas_station_margin_DIESEL_GROUP_S500" DOUBLE PRECISION,
+ADD COLUMN     "gas_station_sanado_hour_margin_DIESEL_GROUP_S500" TIMESTAMP(3),
+ADD COLUMN     "gas_station_sanado_margin_DIESEL_GROUP_S500" BOOLEAN,
+ADD COLUMN     "gas_station_type_margin_DIESEL_GROUP_S500" BOOLEAN,
+ADD COLUMN     "verification_hour_margin_DIESEL_GROUP_S500" TIMESTAMP(3) DEFAULT '2023-01-01T00:00:00Z',
+ALTER COLUMN "verification_hour_marginGC" SET DEFAULT '2023-01-01T00:00:00Z',
+ALTER COLUMN "verification_hour_margin_ETANOL_HIDRATADO_COMBUSTIVEL" SET DEFAULT '2023-01-01T00:00:00Z',
+ALTER COLUMN "verification_hour_margin_DIESEL_GROUP" SET DEFAULT '2023-01-01T00:00:00Z',
+ALTER COLUMN "verification_hour_margin_GASOLINA_PODIUM" SET DEFAULT '2023-01-01T00:00:00Z',
+ALTER COLUMN "verification_hour_margin_GASOLINA_PREMIUM" SET DEFAULT '2023-01-01T00:00:00Z';
+
+-- AlterTable
+ALTER TABLE "ibm_info" ADD COLUMN     "ibm_margin_DIESEL_GROUP_S500" DOUBLE PRECISION[];
+
+-- AlterTable
+ALTER TABLE "region_setvariables" ADD COLUMN     "region_margin_DIESEL_GROUP_S500" DOUBLE PRECISION,
+ADD COLUMN     "region_sanado_hour_margin_DIESEL_GROUP_S500" TIMESTAMP(3),
+ADD COLUMN     "region_sanado_margin_DIESEL_GROUP_S500" BOOLEAN,
+ADD COLUMN     "region_type_margin_DIESEL_GROUP_S500" BOOLEAN,
+ADD COLUMN     "verification_hour_margin_DIESEL_GROUP_S500" TIMESTAMP(3) DEFAULT '2023-01-01T00:00:00Z',
+ALTER COLUMN "verification_hour_marginGC" SET DEFAULT '2023-01-01T00:00:00Z',
+ALTER COLUMN "verification_hour_margin_ETANOL_HIDRATADO_COMBUSTIVEL" SET DEFAULT '2023-01-01T00:00:00Z',
+ALTER COLUMN "verification_hour_margin_DIESEL_GROUP" SET DEFAULT '2023-01-01T00:00:00Z',
+ALTER COLUMN "verification_hour_margin_GASOLINA_PODIUM" SET DEFAULT '2023-01-01T00:00:00Z',
+ALTER COLUMN "verification_hour_margin_GASOLINA_PREMIUM" SET DEFAULT '2023-01-01T00:00:00Z';
+
+-- AlterTable
+ALTER TABLE "regions" ADD COLUMN     "regions_margin_DIESEL_GROUP_S500" DOUBLE PRECISION[];
